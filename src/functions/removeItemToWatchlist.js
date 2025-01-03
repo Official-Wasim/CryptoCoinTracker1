@@ -10,14 +10,19 @@ export const removeItemToWatchlist = (e, id, setIsCoinAdded) => {
     toast.success(
       `${
         id.substring(0, 1).toUpperCase() + id.substring(1)
-      } - has been removed!`
+      } - has been removed!`,
+      {
+        position: "top-center"
+      }
     );
     window.location.reload();
   } else {
     toast.error(
       `${
         id.substring(0, 1).toUpperCase() + id.substring(1)
-      } - could not be removed!`
+      } - could not be removed!`,{
+        position: "top-center"
+      }
     );
     setIsCoinAdded(true);
   }

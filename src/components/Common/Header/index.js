@@ -25,7 +25,9 @@ function Header() {
       setLight();
     }
     setDarkMode(!darkMode);
-    toast.success("Theme Changed!");
+    toast.success("Theme Changed!",{
+      position: 'top-center',
+    });
   };
 
   const setDark = () => {
